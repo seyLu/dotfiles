@@ -5,18 +5,31 @@
 //
 // To see all of Zed's default settings without changing your
 // custom settings, run `zed: open default settings` from the
-// command palette
+// command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "ui_font_size": 17,
+  "ui_font_size": 19,
   "buffer_font_size": 18,
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Nord"
+    "dark": "Catppuccin Macchiato"
   },
-  "buffer_font_family": "JetBrains Mono NL",
   "autosave": "on_focus_change",
   "file_types": {
     "HTML": ["*.svg"]
+  },
+  "features": {
+    "edit_prediction_provider": "none"
+  },
+  "auto_install_extensions": {
+    "catpuccin": true,
+    "html": true,
+    "emmet": true,
+    "dockerfile": true,
+    "docker-compose": true,
+    "toml": true,
+    "git-firefly": true,
+    "sql": true,
+    "env": true
   }
 }

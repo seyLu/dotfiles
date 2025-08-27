@@ -13,10 +13,8 @@
     }
   },
   {
-    "context": "Editor",
     "bindings": {
-      // "j k": ["workspace::SendKeystrokes", "escape"]
-      "alt-1": "workspace::ToggleBottomDock",
+      "alt-a": "workspace::ToggleBottomDock",
       "alt-q": "workspace::ToggleLeftDock"
     }
   }

@@ -2,17 +2,37 @@
   "boilerplate": {
     "prefix": "main",
     "body": [
-      "package main",
+      "package ${1:main}",
       "",
       "import (",
       "  \"fmt\"",
       ")",
       "",
-      "func main() {",
-      "  ${1:fmt.Println(\"Hello World\")}",
+      "func ${2:main}() {",
+      "  ${3:fmt.Println(\"Hello World\")}",
       "}"
     ],
     "description": "go boilerplate."
+  },
+  "test boilerplate": {
+    "prefix": "test",
+    "body": [
+      "package ${1:main}",
+      "",
+      "import (",
+      "  \"testing\"",
+      ")",
+      "",
+      "func Test${2:Main}(t *testing.T) {",
+      "  want := ${3:\"Hello, world\"}",
+      "  got := ${4:Greet(\"world\")}",
+      "",
+      "  if got != want {",
+      "    t.Fatalf(\"want %v, got %v\", want, got)",
+      "  }",
+      "}"
+    ],
+    "description": "go test boilerplate."
   },
   "single import": {
     "prefix": "im",
