@@ -1,0 +1,27 @@
+{
+  "export default page": {
+    "prefix": "edp",
+    "body": [
+      "const Page: React.FC = () => {",
+      "    return <>${1:}</>",
+      "};",
+      "",
+      "export default Page;"
+    ],
+    "description": "export default page"
+  },
+  "export component": {
+    "prefix": "ec",
+    "body": [
+      "type Props = {",
+      "    ${1:data}: ${2:any};",
+      "}",
+      "",
+      "export const ${3:Component}: React.FC<Props> = ({ ${1:data} }) => {",
+      "    return <>${4:}</>",
+      "};",
+      ""
+    ],
+    "description": "export default page"
+  }
+}

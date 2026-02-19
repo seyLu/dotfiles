@@ -7,29 +7,53 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "edit_predictions": {
+    "provider": "none",
+  },
+  "git_panel": {
+    "tree_view": true,
+  },
+  "enable_language_server": true,
+  "agent": {
+    "default_model": {
+      "provider": "ollama",
+      "model": "deepseek-v3.2",
+    },
+    "model_parameters": [],
+  },
+  "language_models": {
+    "ollama": {
+      "api_url": "https://ollama.com",
+    },
+  },
   "ui_font_size": 19,
   "buffer_font_size": 18,
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Catppuccin Macchiato"
+    "dark": "Catppuccin Macchiato - No Italics",
   },
   "autosave": "on_focus_change",
   "file_types": {
-    "HTML": ["*.svg"]
+    "HTML": ["*.svg"],
   },
-  "features": {
-    "edit_prediction_provider": "none"
-  },
+  "disable_ai": true,
+  "wrap_guides": [88],
   "auto_install_extensions": {
     "catpuccin": true,
     "html": true,
+    "xml": true,
     "emmet": true,
+    "scss": true,
+    "biome": true,
     "dockerfile": true,
     "docker-compose": true,
+    "make": true,
+    "basher": true,
     "toml": true,
     "git-firefly": true,
     "sql": true,
-    "env": true
-  }
+    "env": true,
+    "ini": true,
+  },
 }
